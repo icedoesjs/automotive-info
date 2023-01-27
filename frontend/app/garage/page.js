@@ -2,7 +2,7 @@ import '../../styles/pages/garage.css';
 import { properWord } from '../../utils/func';
 import { Remove } from '../../components/RemoveVehicle.component';
 
-// Again, unsure how to get the email using next-auth client side
+// Again, unsure how to get the email using next-auth server side
 async function getGarage(email = 'jgrim524@gmail.com') {
     const res = await fetch(`http://localhost:5000/garage/${email}`);
     return res.json()
