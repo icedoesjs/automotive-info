@@ -12,8 +12,4 @@ def create(**kwargs):
     app = Flask(__name__, **kwargs)
     app.wsgi_app = ProxyFix(app.wsgi_app)
     
-    env_config = os.getenv('APP_SETTINGS')
-    
-    app.config.from_object(env_config)
-    
     return app
