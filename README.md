@@ -3,8 +3,8 @@ A simple automotive written in Next,js and using a RESTFUL Flask API
 
 ## Deploying
 - Create an ENV in API folder via python
-- Install requirements (pip install -m requirements.txt)
-- Install modules in frontend folder (npm i)
+- Install requirements (**pip install -m requirements.txt**)
+- Install modules in frontend folder (**npm i**)
 - Edit config.yaml in api folder
 - Edit secrets.js in frontend
 - Run API using **python run.py**
