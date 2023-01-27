@@ -1,0 +1,2 @@
+sqlalchemy_database_uri: 'postgresql://username:passwored@host/database'
+sqlalchemy_track_modifacations: False

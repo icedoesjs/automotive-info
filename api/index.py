@@ -5,7 +5,7 @@ from src.models import db
 app = create()
 
 
-# Parse YAML config
+# Utilize config class
 config_inst = Config()
 config = config_inst.__dict__
 app.config["SECRET_KEY"] = config["secret_key"]
