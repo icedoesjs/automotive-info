@@ -1,0 +1,38 @@
+.brand {
+    font-size: larger;
+    font-weight: 500;
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.plink {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s;
+    opacity: 50%;
+}
+
+.plink:hover {
+    color: #5449BB;
+    opacity: 100%;
+}
+
+.link {
+    color: red;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1025px){
+    .brand {
+        display: none;
+    }
+}

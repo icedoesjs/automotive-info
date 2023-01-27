@@ -1,0 +1,264 @@
+body {
+    background-color: #f8f8ff;
+}
+
+.head-container {
+    display: flex;
+    padding: 0 0% 0vh 15%;
+    align-items: center;
+    height: 950px;
+    background: url('https://carapi.app/assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.head-text {
+    width: 100%;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.head-caption {
+    font-size: larger;
+    width: 100%;
+}
+
+.btn-sign {
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    color: white;
+    font-size: medium;
+    width: 10vw;
+    height: 4vh;
+    font-weight: 600;
+    white-space: normal;
+    letter-spacing: 0;
+}
+
+.btn-sign:hover {
+    color: white;
+    background: #097ABB;
+    background: linear-gradient(to right, #097ABB 0%, #5449BB 97%);
+    text-decoration: underline;
+}
+
+.site-features {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding: 0 5% 0vh 20%;
+    align-items: center;
+    background-color: #f8f8ff;
+}
+
+.feature-head {
+    width: 100%;
+    font-weight: 600;
+}
+
+.feature-caption {
+    width: 100%;
+}
+
+.left-features {
+    width: 40vw;
+}
+
+.right-features {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-img {
+    width: 50vw;
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: large;
+    width: 100%;
+}
+
+.site-pages {
+    background-color: #f8f8ff;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.pages-title {
+    width: 100%;
+}
+
+.pages-caption {
+    width: 100%;
+}
+
+.page-card {
+    background-color: white;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 5px;
+    padding: 10px 0 0 3px;
+    text-align: left;
+}
+
+.page-card-icon {
+    height: 2vh;
+    color: white;
+}
+
+.icon-holder {
+    background: #097ABB;
+    background: linear-gradient(to right, #097ABB 0%, #5449BB 97%);
+    width: fit-content;
+    width: 2vw;
+    text-align: center;
+    height: 4vh;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+
+.page-card > a {
+    text-decoration: none;
+}
+
+.page-title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sign-up {
+    display: flex;
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    height: 15vh;
+    padding: 0 0% 0vh 20%;
+    align-items: center;
+    color: white;
+}
+
+.left-signup {
+    width: 50%
+}
+
+.right-signup {
+    width: 50%;
+}
+
+.btn-signup {
+    background-color: white;
+    color: #097ABB;
+    transition: 0.3s;
+}
+
+.btn-signup:hover {
+    background-color: transparent;
+    border-color: white;
+    text-decoration: underline;
+}
+
+.btn-right {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-left: 1vw;
+}
+
+.btn-right:hover {
+    background-color: white;
+    color: #097ABB;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 1280px){
+
+    .head-container {
+        padding: 0;
+        text-align: center;
+        height: fit-content;
+        margin-bottom: 8vh;
+        width: 90vw;
+    }
+
+    .right {
+        display: none;
+    }
+
+
+    .btn-sign {
+        width: fit-content;
+        height: 2rem;
+    }
+
+    .site-features {
+        flex-wrap: wrap;
+        margin-top: 0;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        height: fit-content;
+        width: 100vw;
+    }
+
+    .left-features {
+        width: 80vw;
+    }
+
+    .right-features {
+        display: none;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .page-card {
+        width: 90vw;
+        height: fit-content;
+    }
+
+    .icon-holder {
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sign-up {
+        height: 15rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .left-signup {
+        width: 90vw;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .right-signup {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .btn-signup {
+        margin-top: 2vh;
+    }
+
+    .btn-right {
+        display: none;
+    }
+
+}

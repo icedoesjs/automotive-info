@@ -1,0 +1,165 @@
+body {
+    background-color: #f8f8ff;
+}
+
+h1 {
+    width: 100%;
+}
+
+input {
+    outline-width: 0
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+}
+
+.top-caption {
+    width: 100%;
+}
+
+.obd {
+    font-weight: 500;
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.code-input {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    width: 35rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+
+.code-input:focus {
+    color: #5449BB;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.code-input:focus::placeholder {
+    color: transparent
+}
+
+.submit-btn {
+    height: 3rem;
+    background-color: white;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.submit-btn > i {
+    font-size: larger;
+}
+
+
+.box-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+
+
+.middle-container {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 50%;
+    padding: 1rem 3rem 0 3rem;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+.code-meaning {
+    margin-top: 2vh;
+}
+
+.card-link {
+    display: block;
+    width: 90vw;
+    text-decoration: none;
+    color: black;
+    border-width: 5px;
+}
+
+.card-link:hover {
+    color: black
+}
+
+.code-card {
+    width: 100%;
+    border: 0;
+    border-width: 5px;
+    transition: 0.3s;
+    margin-bottom: 1vh;
+}
+
+.code-card:hover {
+    background-color: #f8f8ff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+
+.code-card:hover h5 {
+    text-decoration: underline;
+    text-decoration-color: #097ABB;
+    text-decoration-thickness: 2px;
+}
+
+.code-description {
+    font-size: large
+}
+
+
+
+.list-item > a {
+    text-decoration: none;
+    color: #5449BB;
+    transition: 0.3s
+}
+
+.list-item > a:hover {
+    font-size: larger
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1280px){
+    .code-input {
+        width: 70vw;
+    }
+
+    .middle-container {
+        width: 90vw
+    }
+
+}

@@ -1,0 +1,217 @@
+body {
+    background-color: #f8f8ff;
+}
+
+h2 {
+    width: 100%;
+}
+
+.top-container {
+    justify-content: center;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.vin-number {
+    font-weight: 500;
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.salvage {
+    font-weight: 500;
+    background: #CF2513;
+    background: linear-gradient(to left, #CF2513 0%, #CF592E 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.is-yours {
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.is-yours:hover {
+    font-size: large;
+    color: white;
+    background: linear-gradient(to right, #097ABB 0%, #5449BB 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.make-info {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem 0 1rem 0;
+    flex-wrap: wrap;
+}
+
+.info-header {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+
+.card-rows {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.info-card {
+    width: 10vw;
+    text-align: left;
+    margin-bottom: 2vh;
+    border-left: 0.3px solid black;
+    border-top: 0.3px solid black;
+    border-bottom: 0.3px solid black;
+}
+
+.info-card:nth-child(4), .info-card:nth-child(8), .info-card:nth-child(12), .info-card:nth-child(16), .info-card:last-child {
+    border-right: 0.3px solid black;
+}
+
+
+.card-head {
+    font-size: 14px;
+}
+
+.info-text {
+    font-weight: 500;
+    line-height: 0px;
+}
+
+
+.colors-header {
+    width: fit-content;
+    margin-top: 5vh;
+    border-bottom: 3px solid #5449BB;
+}
+
+.color-table {
+    margin-top: 2vh;
+}
+
+.color-table th {
+    text-align: center;
+}
+
+.color-table td {
+    border: 0.3px solid black;
+    padding: 10px 0px 8px 0px;
+    width: 20rem;
+    border-spacing: 100px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.options-container {
+    margin-top: 5vh;
+}
+
+.options-head {
+    border-bottom: 3px solid #5449BB;
+    margin-bottom: 2vh;
+}
+
+.options-list {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.options-list li {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info-container {
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+}
+
+.info-head h3 {
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5449BB;
+}
+
+.info-head {
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.info-container p {
+    width: 70%;
+}
+
+.vin-decode {
+    width: 40rem;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1280px){
+    .make-info {
+        width: 90vw;
+    }
+
+    .card-rows {
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        width: 90%;
+        border-right: 0.3px solid black;
+    }
+
+    .colors-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .color-table {
+        width: 80%;
+    }
+
+    .options-container {
+        text-align: center;
+    }
+
+    .info-container {
+        width: 80%;
+    }
+
+    .vin-decode {
+        width: 18rem;
+    }
+}

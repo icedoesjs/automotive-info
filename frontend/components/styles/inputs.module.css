@@ -1,0 +1,50 @@
+.model {
+    margin-left: 1vw;
+}
+
+
+.make,
+.model {
+    color: black;
+    background-color: #f8f8ff;
+    border-color: #f8f8ff;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    width: 10vw;
+    font-size: 20px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.make::before,
+.model::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.make:hover::before, .model:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.make:hover, .model:hover {
+    border-color: #f8f8ff
+}
+
+.make option, .model option {
+    padding: 30px;
+}
+
+.make:focus, .model:focus {
+    outline: none !important;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4)
+}

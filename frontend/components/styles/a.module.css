@@ -1,0 +1,12 @@
+.remove {
+    color: gray;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.remove:hover {
+    font-size: medium;
+    color: #5449BB !important;
+}

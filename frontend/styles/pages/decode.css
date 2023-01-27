@@ -1,0 +1,219 @@
+body {
+    background-color: #f8f8ff;
+}
+
+h1 {
+    width: 100%;
+}
+
+h3 {
+    width: 38rem;
+    text-align: center;
+    border-bottom: 1px solid #6c757d;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: large;
+}
+
+h3 span {
+    background: #f8f8ff;
+    padding: 0 10px;
+}
+
+input,
+select {
+    outline-width: 0
+}
+
+form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+}
+
+.top-caption {
+    width: 100%;
+}
+
+.vin {
+    font-weight: 500;
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.vin-input {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    width: 36rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+
+.vin-input:focus {
+    color: #5449BB;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.plate-input {
+    width: 15rem;
+}
+
+.plate-input:focus {
+    color: #097abb;
+}
+
+.vin-input:focus::placeholder {
+    color: transparent
+}
+
+.state-select {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    width: 15rem;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-left: 1vw;
+}
+
+
+.submit-btn {
+    height: 3rem;
+    background-color: white;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.plate-btn {
+    border: 0;
+    background: #097ABB;
+    background: linear-gradient(to left, #097ABB 0%, #5449BB 97%);
+    margin-left: 1vw;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.plate-btn:hover {
+    background: linear-gradient(to right, #097ABB 0%, #5449BB 97%);
+}
+
+.box-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+
+
+.middle-container {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 50%;
+    padding: 1rem 3rem 0 3rem;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.vin-info {
+    width: 100%;
+}
+
+.whereisvin {
+    width: 50rem;
+}
+
+.vin-standard {
+    margin-top: 2vh;
+}
+
+.vininfo {
+    margin-top: 1vh;
+    width: 50rem;
+}
+
+.list-item>a {
+    text-decoration: none;
+    color: #5449BB;
+    transition: 0.3s
+}
+
+.list-item>a:hover {
+    font-size: larger
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1280px) {
+
+    form {
+        flex-wrap: wrap
+    }
+
+    .vin-input,
+    .plate-input {
+        width: 70vw;
+    }
+
+    .middle-container {
+        width: 90vw
+    }
+
+    .whereisvin,
+    .vininfo {
+        width: 15rem;
+    }
+
+    h3 {
+        width: 20rem;
+    }
+
+    .box-plate {
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+
+    .state-select,
+    .plate-input {
+        margin-bottom: 1rem;
+    }
+
+    .state-select,
+    .plate-btn {
+        width: 20rem;
+    }
+
+}
