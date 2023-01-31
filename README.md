@@ -1,5 +1,5 @@
 # automotive-info
-A simple automotive written in Next,js and using a RESTFUL Flask API
+A simple automotive website written in Next,js and using a RESTFUL Flask API
 
 ## Deploying
 - Create an ENV in API folder via python
