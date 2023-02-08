@@ -9,7 +9,7 @@ A simple automotive website written in Next,js and using a RESTFUL Flask API
 
 ## Languages
 - TypeScript
-- JavasScript
+- JavaScript
 - Python
 
 ## Deploying
