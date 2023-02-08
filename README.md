@@ -1,6 +1,17 @@
 # automotive-info
 A simple automotive website written in Next,js and using a RESTFUL Flask API
 
+## Technologies
+- Flask (API)
+- Postgres (could use MySQL as well but I tend to prefer postgres because of the syntax)
+- Next.JS (originally started with React but I prefer Next's routing)
+- Boostrap5 (for ease of styling as well as less time spent styling)
+
+## Languages
+- TypeScript
+- JavasScript
+- Python
+
 ## Deploying
 - Create an ENV in API folder via python
 - Install requirements (**pip install -m requirements.txt**)
