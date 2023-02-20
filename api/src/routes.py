@@ -6,7 +6,8 @@ api = Blueprint('api', __name__)
 
 @api.route("/addtodb/<email>")
 def add_user(email):
-    if email == "false":
+    if email == "false" or email == "undefined":
+        print("User provided is not logged in. (undefined)")
         res = {
             "code": "409",
             "message": "false voids the function"
