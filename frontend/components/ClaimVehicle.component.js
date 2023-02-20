@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react';
 
-export function Claim({make, model, year}) {
+export function Claim({make, model, year, email}) {
     const [aText, setAText] = useState("Add To Garage");
     const [aLink, setALink] = useState("#");
 
@@ -15,6 +15,7 @@ export function Claim({make, model, year}) {
 
     async function claimVehicle() {
         let data = {
+            "email": email,
             "make": make,
             "model": model,
             "year": year
