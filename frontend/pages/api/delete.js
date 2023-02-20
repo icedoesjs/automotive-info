@@ -5,6 +5,6 @@ export default async function remove(req, res) {
         return res.json()
     }
     const body = JSON.parse(req.body);
-    let code = await removeVehicle(body.make.toLowerCase(), body.model.toLowerCase(), body.year, 'jgrim524@gmail.com');
+    let code = await removeVehicle(body.make.toLowerCase(), body.model.toLowerCase(), body.year, body.email);
     res.redirect('/garage', 200);
 }
