@@ -11,12 +11,9 @@ import useSWR from 'swr';
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-
-// 100% a better way to do this hook but i am unsure how, you can only use a hook which isnt in a conditional statement so it gets called every render
 export default function Home() {
     const { data: session, status } = useSession();
-    let email = false;
-    if (session) { email = session.user.email }
+    var email = session?.user?.email
     const {data, error} = useSWR(`http://localhost:5000/addtodb/${email}`, fetcher);
     if (error) console.log(error)
     return (
