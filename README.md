@@ -22,7 +22,5 @@ A simple automotive website written in Next,js and using a RESTFUL Flask API
 - Run frontend using **npm run dev**
 
 ## Known flaws
-- Only 1 email (my personal email) used for garage function, read file notes why
-- Index page hook being sent to API every load, read file notes
 - Styles sometimes glitching but fixed on page reload (assuming app size)
 - Load times are sometimes close to 200ms, could be optimized given more time
