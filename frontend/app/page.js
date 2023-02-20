@@ -15,7 +15,6 @@ export default function Home() {
     const { data: session, status } = useSession();
     var email = session?.user?.email
     const {data, error} = useSWR(`http://localhost:5000/addtodb/${email}`, fetcher);
-    if (error) console.log(error)
     return (
         <div>
             <div className="head-container">
