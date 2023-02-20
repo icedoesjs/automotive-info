@@ -3,11 +3,12 @@ import styles from './styles/a.module.css';
 
 export function Remove({make, model, year, email}) {
     async function removeVehicle() {
+        console.log('remove invoked')
         let data = {
             make: make,
             model: model,
             year: year,
-            email: 'jgrim524@gmail.com'
+            email: email
         }
         const res = await fetch('/api/delete', {
             method: 'POST',
