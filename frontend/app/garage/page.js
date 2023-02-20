@@ -38,7 +38,7 @@ export default async function Garage() {
                             </div>
                             <div className="card-footer vehicle-card-footer">
                                 <small className="text-muted"><a className="vehicle-card-link text-muted" href={`/search/${v.split(" ")[1]}/${v.split(" ")[2]}/${v.split(" ")[0]}`}>View vehicle →</a></small>
-                                <small className="text-muted"><Remove make={v.split(" ")[1]} model={v.split(" ")[2]} year={v.split(" ")[0]}/></small>
+                                <small className="text-muted"><Remove make={v.split(" ")[1]} model={v.split(" ")[2]} year={v.split(" ")[0]} email={session?.user.email}/></small>
                             </div>
                         </div>
                     )
