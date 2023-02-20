@@ -2,6 +2,8 @@ import { checkNested, loopOptions, properWord, yearsSince, getColors } from "../
 import "../../../styles/pages/vehicle.css";
 import {Claim} from '../../../components/ClaimVehicle.component';
 import secrets from "@/secrets";
+import { getServerSession } from 'next-auth/next';
+import { authOptions } from '../../../pages/api/auth/[...nextauth]';
 
 async function getVin(vin) {
     const res = await fetch(`https://auto.dev/api/vin/${vin}`, {
@@ -22,6 +24,7 @@ async function checkStatus(vin) {
 }
 
 export default async function VinPage(params) {
+    const session = await getServerSession(authOptions);
     const response = await getVin(params.params.vin);
     let v_data = {
         make: response.make.name,
@@ -91,7 +94,7 @@ export default async function VinPage(params) {
             <div className="top-container">
                 <h2>We found a {v_data.year} {v_data.make} {v_data.model}</h2>
                 {salvage_warning}
-                <Claim make={v_data.make} model={v_data.model} year={v_data.year} />
+                <Claim make={v_data.make} model={v_data.model} year={v_data.year} email={session?.user.email} />
             </div>
             <div className="make-info">
                 <div className="info-header">
