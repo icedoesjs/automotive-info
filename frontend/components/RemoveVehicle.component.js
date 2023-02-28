@@ -3,7 +3,6 @@ import styles from './styles/a.module.css';
 
 export function Remove({make, model, year, email}) {
     async function removeVehicle() {
-        console.log('remove invoked')
         let data = {
             make: make,
             model: model,
