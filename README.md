@@ -1,6 +1,10 @@
 # automotive-info
 A simple automotive website written in Next,js and using a RESTFUL Flask API
 
+## Preview
+![Decoder](https://cdn.iceyy.dev/storage/389558396195438593/PVo9Jc-JNg.png)
+![Search](https://cdn.iceyy.dev/storage/389558396195438593/gsUJxVbllw.png)
+
 ## Technologies
 - Flask (API)
 - Postgres (could use MySQL as well but I tend to prefer postgres because of the syntax)
